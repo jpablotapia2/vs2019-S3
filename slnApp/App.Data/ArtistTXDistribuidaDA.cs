@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using App.Entities;
+using System.Transactions;
 
 namespace App.Data
 {
-    public class ArtistDA:BaseConnection
+    public class ArtistTXDistribuidaDA : BaseConnection
     {
         /// <summary>
         /// Método que permite obtener la cantidad de registros que existen en artistas
@@ -152,18 +153,33 @@ namespace App.Data
         public int InsertArtist(Artista entity)
         {
             var result = 0;
-            
-            using (IDbConnection cn = new SqlConnection(base.GetConnectionString))
+
+            using (var trx = new TransactionScope())
             {
-                cn.Open();
+                try
+                {
+                    using (IDbConnection cn = new SqlConnection(base.GetConnectionString))
+                    {
+                        cn.Open();
 
-                IDbCommand cmd = new SqlCommand("usp_InsertArtist");
-                cmd.Connection = cn;
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add(new SqlParameter( "@Name", entity.Name));
+                        IDbCommand cmd = new SqlCommand("usp_InsertArtist");
+                        cmd.Connection = cn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.Add(new SqlParameter("@Name", entity.Name));
 
-                result = Convert.ToInt32(cmd.ExecuteScalar());   
+                        result = Convert.ToInt32(cmd.ExecuteScalar());
 
+                        //Confirma la transacción
+                        trx.Complete();
+
+                    }
+ 
+                }
+                catch (Exception ex)
+                {
+                    //No es necesariuo hacer rollback
+                    throw;
+                }
             }
 
             return result;
@@ -173,18 +189,31 @@ namespace App.Data
         {
             var result = 0;
 
-            using (IDbConnection cn = new SqlConnection(base.GetConnectionString))
+            using (var trx= new TransactionScope())
             {
-                cn.Open();
+                try
+                {
+                    using (IDbConnection cn = new SqlConnection(base.GetConnectionString))
+                    {
+                        cn.Open();
 
-                IDbCommand cmd = new SqlCommand("usp_UpdateArtist");
-                cmd.Connection = cn;
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add(new SqlParameter("@Name", entity.Name));
-                cmd.Parameters.Add(new SqlParameter("@ArtistId", entity.ArtistId));
+                        IDbCommand cmd = new SqlCommand("usp_UpdateArtist");
+                        cmd.Connection = cn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.Add(new SqlParameter("@Name", entity.Name));
+                        cmd.Parameters.Add(new SqlParameter("@ArtistId", entity.ArtistId));
 
-                result = cmd.ExecuteNonQuery();
+                        result = cmd.ExecuteNonQuery();
 
+                        trx.Complete();
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    throw;
+                }
+                
             }
 
             return result;
@@ -193,16 +222,31 @@ namespace App.Data
         public int DeleteArtist(int id)
         {
             var result = 0;
-            using (IDbConnection cn= new SqlConnection(base.GetConnectionString))
-            {
-                cn.Open();
-                IDbCommand cmd = new SqlCommand("usp_DeleteArtist");
-                cmd.Connection = cn;
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add(new SqlParameter("@ArtistId", id));
 
-                result = cmd.ExecuteNonQuery();
-            }
+            using (var trx = new TransactionScope())
+            {
+                try
+                {
+                    using (IDbConnection cn = new SqlConnection(base.GetConnectionString))
+                    {
+                        cn.Open();
+                        
+                        IDbCommand cmd = new SqlCommand("usp_DeleteArtist");
+                        cmd.Connection = cn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.Add(new SqlParameter("@ArtistId", id));
+
+                        result = cmd.ExecuteNonQuery();
+
+                        trx.Complete();
+                    }
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }         
             return result;
         }
     }

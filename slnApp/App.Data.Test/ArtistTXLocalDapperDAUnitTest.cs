@@ -1,18 +1,19 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using App.Data;
+
 using App.Entities;
 
 namespace App.Data.Test
 {
     [TestClass]
-    public class ArtistDAUnitTest
+    public class ArtistTXLocalDapperDAUnitTest
     {
+
         [TestMethod]
         public void TestMethod1()
         {
 
-            var da = new ArtistDA();
+            var da = new ArtistTXLocalDapperDA();
             Assert.IsTrue(da.GetCount() > 0);
 
         }
@@ -21,8 +22,8 @@ namespace App.Data.Test
         public void TestGetAll()
         {
 
-            var da = new ArtistDA();
-            var listado = da.GetAll("Aerosmith");
+            var da = new ArtistTXLocalDapperDA();
+            var listado = da.GetAll("%Aero%");
 
             Assert.IsTrue(listado.Count > 0);
 
@@ -32,7 +33,7 @@ namespace App.Data.Test
         public void TestGet()
         {
 
-            var da = new ArtistDA();
+            var da = new ArtistTXLocalDapperDA();
             var entity = da.Get(8);
 
             Assert.IsTrue(entity.ArtistId > 0);
@@ -43,8 +44,8 @@ namespace App.Data.Test
         public void TestGetAllSP()
         {
 
-            var da = new ArtistDA();
-            var listado = da.GetAllSP("Aero");
+            var da = new ArtistTXLocalDapperDA();
+            var listado = da.GetAllSP("%Aero%");
 
             Assert.IsTrue(listado.Count > 0);
 
@@ -53,25 +54,16 @@ namespace App.Data.Test
         [TestMethod]
         public void TestInsertArtista()
         {
-            //var objInsertar = new Artista {
-            //    Name = "Lily"
-            //};
 
-            //var da = new ArtistDA();
-            //var nuevoId = da.InsertArtist(objInsertar);
 
-            //var objBD = da.Get((int)(nuevoId));
-
-            //Assert.AreEqual(objBD.Name, objInsertar.Name);
-
-            var da = new ArtistDA();
+            var da = new ArtistTXLocalDapperDA();
             var artist = new Artista();
-            artist.Name = "Aero3";
+            artist.Name = "AeroDapper";
 
             var id = da.InsertArtist(artist);
 
-            Assert.IsTrue(id > 0,"El nombre del artista ya Existe");
-            
+            Assert.IsTrue(id > 0, "El nombre del artista ya Existe");
+
 
 
         }
@@ -79,32 +71,31 @@ namespace App.Data.Test
         [TestMethod]
         public void TestUpdateArtista()
         {
-            var da = new ArtistDA();
+            var da = new ArtistTXLocalDapperDA();
             var artist = new Artista
             {
-                ArtistId=280,
-                Name = "Aero-Copia2"
+                ArtistId = 285,
+                Name = "Aero-DapperUpdate"
             };
 
             var registrosAfectados = da.UpdateArtist(artist);
-            Assert.IsTrue(registrosAfectados>0, "El nombre del artista ya EXISTE");
+            Assert.IsTrue(registrosAfectados > 0, "El nombre del artista ya EXISTE");
 
         }
 
         [TestMethod]
         public void TestDeleteArtista()
         {
-            var da = new ArtistDA();
+            var da = new ArtistTXLocalDapperDA();
 
-            var regBusqEliminar = da.DeleteArtist(278);
-            
+            var regBusqEliminar = da.DeleteArtist(277);
+
 
             Assert.IsTrue(regBusqEliminar > 0, "No se encontró el ID");
 
         }
 
 
+        
     }
-
-
 }

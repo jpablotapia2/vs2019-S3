@@ -13,3 +13,5 @@ C:\Sesion 2\GitSes2\vs2019-S3\slnApp\App.Data\obj\Debug\App.Data.csproj.CoreComp
 C:\Sesion 2\GitSes2\vs2019-S3\slnApp\App.Data\obj\Debug\App.Data.csproj.CopyComplete
 C:\Sesion 2\GitSes2\vs2019-S3\slnApp\App.Data\obj\Debug\App.Data.dll
 C:\Sesion 2\GitSes2\vs2019-S3\slnApp\App.Data\obj\Debug\App.Data.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnApp\App.Data\bin\Debug\Dapper.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnApp\App.Data\bin\Debug\Dapper.xml

@@ -40,3 +40,5 @@ C:\Sesion 2\GitSes2\vs2019-S3\slnApp\App.Data.Test\obj\Debug\App.Data.Test.cspro
 C:\Sesion 2\GitSes2\vs2019-S3\slnApp\App.Data.Test\obj\Debug\App.Data.Test.csproj.CopyComplete
 C:\Sesion 2\GitSes2\vs2019-S3\slnApp\App.Data.Test\obj\Debug\App.Data.Test.dll
 C:\Sesion 2\GitSes2\vs2019-S3\slnApp\App.Data.Test\obj\Debug\App.Data.Test.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnApp\App.Data.Test\bin\Debug\Dapper.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnApp\App.Data.Test\bin\Debug\Dapper.xml
