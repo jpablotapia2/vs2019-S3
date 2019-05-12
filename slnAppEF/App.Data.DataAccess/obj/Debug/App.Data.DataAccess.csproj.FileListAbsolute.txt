@@ -1,0 +1,14 @@
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll.config
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\bin\Debug\App.Data.DataAccess.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\bin\Debug\App.Entities.Base.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\bin\Debug\EntityFramework.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\bin\Debug\App.Entities.Base.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\bin\Debug\EntityFramework.xml
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csprojAssemblyReference.cache
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CoreCompileInputs.cache
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CopyComplete
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.pdb

@@ -79,7 +79,7 @@ namespace App.Data.Test
             };
 
             var registrosAfectados = da.UpdateArtist(artist);
-            Assert.IsTrue(registrosAfectados > 0, "El nombre del artista ya EXISTE");
+            Assert.IsTrue(registrosAfectados, "El nombre del artista ya EXISTE");
 
         }
 
@@ -91,7 +91,7 @@ namespace App.Data.Test
             var regBusqEliminar = da.DeleteArtist(289);
 
 
-            Assert.IsTrue(regBusqEliminar > 0, "No se encontró el ID");
+            Assert.IsTrue(regBusqEliminar, "No se encontró el ID");
 
         }
 

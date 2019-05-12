@@ -178,6 +178,7 @@ namespace App.Data
                 catch (Exception ex)
                 {
                     //No es necesariuo hacer rollback
+                    result = 0;
                     throw;
                 }
             }
@@ -185,9 +186,9 @@ namespace App.Data
             return result;
         }
 
-        public int UpdateArtist(Artista entity)
+        public bool UpdateArtist(Artista entity)
         {
-            var result = 0;
+            var result = false;
 
             using (var trx= new TransactionScope())
             {
@@ -203,7 +204,7 @@ namespace App.Data
                         cmd.Parameters.Add(new SqlParameter("@Name", entity.Name));
                         cmd.Parameters.Add(new SqlParameter("@ArtistId", entity.ArtistId));
 
-                        result = cmd.ExecuteNonQuery();
+                        result = cmd.ExecuteNonQuery()>0;
 
                         trx.Complete();
                     }
@@ -211,7 +212,7 @@ namespace App.Data
                 catch (Exception ex)
                 {
 
-                    throw;
+                    result=false;
                 }
                 
             }
@@ -219,9 +220,9 @@ namespace App.Data
             return result;
         }
 
-        public int DeleteArtist(int id)
+        public bool DeleteArtist(int id)
         {
-            var result = 0;
+            var result = false;
 
             using (var trx = new TransactionScope())
             {
@@ -236,15 +237,15 @@ namespace App.Data
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.Add(new SqlParameter("@ArtistId", id));
 
-                        result = cmd.ExecuteNonQuery();
+                        result = cmd.ExecuteNonQuery()>0;
 
                         trx.Complete();
                     }
                 }
                 catch (Exception)
                 {
+                    result = false;
 
-                    throw;
                 }
             }         
             return result;

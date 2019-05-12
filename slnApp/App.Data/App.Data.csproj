@@ -45,11 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArtistTXDistribuidaDapperDA.cs" />
     <Compile Include="ArtistTXDistribuidaDA.cs" />
+    <Compile Include="ArtistTXDistrDapperDA.cs" />
     <Compile Include="ArtistTXLocalDapperDA.cs" />
     <Compile Include="ArtistTXLocalDA.cs" />
     <Compile Include="ArtistDA.cs" />
     <Compile Include="BaseConnection.cs" />
+    <Compile Include="InvoiceDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

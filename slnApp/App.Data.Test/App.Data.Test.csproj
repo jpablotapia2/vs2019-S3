@@ -53,6 +53,7 @@
     <Compile Include="ArtistTXDistrUnitTests.cs" />
     <Compile Include="ArtistTXLocalDapperDAUnitTest.cs" />
     <Compile Include="ArtistTXLocalDAUnitTest.cs" />
+    <Compile Include="InvoiceTXDapperUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

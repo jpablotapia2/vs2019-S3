@@ -79,7 +79,7 @@ namespace App.Data.Test
             };
 
             var registrosAfectados = da.UpdateArtist(artist);
-            Assert.IsTrue(registrosAfectados > 0, "El nombre del artista ya EXISTE");
+            Assert.IsTrue(registrosAfectados =true , "El nombre del artista ya EXISTE");
 
         }
 
@@ -91,11 +91,28 @@ namespace App.Data.Test
             var regBusqEliminar = da.DeleteArtist(277);
 
 
-            Assert.IsTrue(regBusqEliminar > 0, "No se encontró el ID");
+            Assert.IsTrue(regBusqEliminar = true, "No se encontró el ID");
 
         }
 
 
-        
+        [TestMethod]
+        public void TestInsertArtistaTX()
+        {
+
+
+            var da = new ArtistTXLocalDapperDA();
+            var artist = new Artista();
+            artist.Name = "AeroDapperTX";
+
+            var id = da.InsertTXArtist(artist);
+
+            Assert.IsTrue(id > 0, "El nombre del artista ya Existe");
+
+
+
+        }
+
+
     }
 }
