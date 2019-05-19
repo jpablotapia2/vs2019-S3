@@ -25,3 +25,5 @@ C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UnitTest.Data\obj\Debug\App.UnitTest.
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UnitTest.Data\obj\Debug\App.UnitTest.Data.csproj.CopyComplete
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UnitTest.Data\obj\Debug\App.UnitTest.Data.dll
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UnitTest.Data\obj\Debug\App.UnitTest.Data.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UnitTest.Data\bin\Debug\App.Entities.Queris.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UnitTest.Data\bin\Debug\App.Entities.Queris.pdb

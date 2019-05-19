@@ -12,3 +12,5 @@ C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\obj\Debug\App.Data.Da
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.csproj.CopyComplete
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.dll
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\obj\Debug\App.Data.DataAccess.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\bin\Debug\App.Entities.Queris.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Data.DataAccess\bin\Debug\App.Entities.Queris.pdb
