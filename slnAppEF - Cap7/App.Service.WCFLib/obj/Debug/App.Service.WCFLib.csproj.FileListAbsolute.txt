@@ -1,0 +1,7 @@
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Service.WCFLib\bin\Debug\App.Service.WCFLib.dll.config
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Service.WCFLib\bin\Debug\App.Service.WCFLib.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Service.WCFLib\bin\Debug\App.Service.WCFLib.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Service.WCFLib\obj\Debug\App.Service.WCFLib.csprojAssemblyReference.cache
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Service.WCFLib\obj\Debug\App.Service.WCFLib.csproj.CoreCompileInputs.cache
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Service.WCFLib\obj\Debug\App.Service.WCFLib.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Service.WCFLib\obj\Debug\App.Service.WCFLib.pdb

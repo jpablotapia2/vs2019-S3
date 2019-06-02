@@ -29,3 +29,10 @@ C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UI.Desktop\obj\Debug\App.UI.Desktop.c
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UI.Desktop\obj\Debug\App.UI.Desktop.csproj.CopyComplete
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UI.Desktop\obj\Debug\App.UI.Desktop.exe
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UI.Desktop\obj\Debug\App.UI.Desktop.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UI.Desktop\obj\Debug\App.UI.Desktop.frmReporteTracks.resources
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UI.Desktop\obj\Debug\App.UI.Desktop.MDIPrincipal.resources
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UI.Desktop\bin\Debug\App.Data.Repository.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UI.Desktop\bin\Debug\App.Data.Repository.Interface.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UI.Desktop\bin\Debug\App.Data.Repository.Interface.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UI.Desktop\bin\Debug\App.Data.Repository.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.UI.Desktop\bin\Debug\App.Data.Repository.dll.config
