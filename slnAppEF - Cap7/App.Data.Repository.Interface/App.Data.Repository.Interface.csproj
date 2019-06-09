@@ -43,10 +43,15 @@
   <ItemGroup>
     <Compile Include="IAlbumRepository.cs" />
     <Compile Include="IAppUnitOfWork.cs" />
+    <Compile Include="ICustomerRepository.cs" />
+    <Compile Include="IEmployeeRepository.cs" />
     <Compile Include="IGenericRepository.cs" />
     <Compile Include="IArtistRepository.cs" />
     <Compile Include="IGenreRepository.cs" />
+    <Compile Include="IInvoiceRepository.cs" />
+    <Compile Include="IInvoiceLineRepository.cs" />
     <Compile Include="IMediaTypeRepository.cs" />
+    <Compile Include="IPlayListRepository.cs" />
     <Compile Include="ITrackRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

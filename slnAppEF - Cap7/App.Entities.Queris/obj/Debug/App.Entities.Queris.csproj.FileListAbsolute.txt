@@ -4,3 +4,9 @@ C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Entities.Queris\obj\Debug\App.Entitie
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Entities.Queris\obj\Debug\App.Entities.Queris.csproj.CoreCompileInputs.cache
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Entities.Queris\obj\Debug\App.Entities.Queris.dll
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Entities.Queris\obj\Debug\App.Entities.Queris.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Entities.Queris\bin\Debug\App.Entities.Queris.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Entities.Queris\bin\Debug\App.Entities.Queris.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Entities.Queris\obj\Debug\App.Entities.Queris.csprojAssemblyReference.cache
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Entities.Queris\obj\Debug\App.Entities.Queris.csproj.CoreCompileInputs.cache
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Entities.Queris\obj\Debug\App.Entities.Queris.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Entities.Queris\obj\Debug\App.Entities.Queris.pdb

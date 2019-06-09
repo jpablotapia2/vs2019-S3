@@ -4,3 +4,9 @@ C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Entities.Base\obj\Debug\App.Entities.
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Entities.Base\obj\Debug\App.Entities.Base.csproj.CoreCompileInputs.cache
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Entities.Base\obj\Debug\App.Entities.Base.dll
 C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF\App.Entities.Base\obj\Debug\App.Entities.Base.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Entities.Base\bin\Debug\App.Entities.Base.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Entities.Base\bin\Debug\App.Entities.Base.pdb
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Entities.Base\obj\Debug\App.Entities.Base.csprojAssemblyReference.cache
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Entities.Base\obj\Debug\App.Entities.Base.csproj.CoreCompileInputs.cache
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Entities.Base\obj\Debug\App.Entities.Base.dll
+C:\Sesion 2\GitSes2\vs2019-S3\slnAppEF - Cap7\App.Entities.Base\obj\Debug\App.Entities.Base.pdb

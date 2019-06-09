@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="IAlbumRepository.cs" />
     <Compile Include="IAppUnitOfWork.cs" />
+    <Compile Include="ICustomerRepository.cs" />
+    <Compile Include="IEmployeeRepository.cs" />
     <Compile Include="IGenericRepository.cs" />
     <Compile Include="IArtistRepository.cs" />
     <Compile Include="ITrackRepository.cs" />

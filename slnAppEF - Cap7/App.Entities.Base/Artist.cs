@@ -4,8 +4,9 @@ namespace App.Entities.Base
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    
+    using System.Runtime.Serialization;
 
+    [DataContract]
     [Table("Artist")]
     public partial class Artist
     {
@@ -15,8 +16,10 @@ namespace App.Entities.Base
             Album = new HashSet<Album>();
         }
 
+        [DataMember]
         public int ArtistId { get; set; }
 
+        [DataMember]
         [StringLength(120)]
         public string Name { get; set; }
 
